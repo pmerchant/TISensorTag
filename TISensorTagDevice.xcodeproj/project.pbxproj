@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D05870351BB31A8700065EEE /* TISensorTagDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D058702A1BB31A8700065EEE /* TISensorTagDevice.framework */; settings = {ASSET_TAGS = (); }; };
+		D058703A1BB31A8700065EEE /* TISensorTagDeviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D05870391BB31A8700065EEE /* TISensorTagDeviceTests.m */; };
+		D05870561BB31BE000065EEE /* TISensorTag.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870441BB31BDF00065EEE /* TISensorTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05870571BB31BE000065EEE /* TISensorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D05870451BB31BE000065EEE /* TISensorTag.m */; settings = {ASSET_TAGS = (); }; };
+		D05870581BB31BE000065EEE /* TISensorTagAccelerometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870461BB31BE000065EEE /* TISensorTagAccelerometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05870591BB31BE000065EEE /* TISensorTagAccelerometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D05870471BB31BE000065EEE /* TISensorTagAccelerometerSensor.m */; settings = {ASSET_TAGS = (); }; };
+		D058705A1BB31BE000065EEE /* TISensorTagBarometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870481BB31BE000065EEE /* TISensorTagBarometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D058705B1BB31BE000065EEE /* TISensorTagBarometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D05870491BB31BE000065EEE /* TISensorTagBarometerSensor.m */; settings = {ASSET_TAGS = (); }; };
+		D058705C1BB31BE000065EEE /* TISensorTagButtonSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D058704A1BB31BE000065EEE /* TISensorTagButtonSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D058705D1BB31BE000065EEE /* TISensorTagButtonSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D058704B1BB31BE000065EEE /* TISensorTagButtonSensor.m */; settings = {ASSET_TAGS = (); }; };
+		D058705E1BB31BE000065EEE /* TISensorTagGyroscopeSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D058704C1BB31BE000065EEE /* TISensorTagGyroscopeSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D058705F1BB31BE000065EEE /* TISensorTagGyroscopeSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D058704D1BB31BE000065EEE /* TISensorTagGyroscopeSensor.m */; settings = {ASSET_TAGS = (); }; };
+		D05870601BB31BE000065EEE /* TISensorTagHygrometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D058704E1BB31BE000065EEE /* TISensorTagHygrometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05870611BB31BE000065EEE /* TISensorTagHygrometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D058704F1BB31BE000065EEE /* TISensorTagHygrometerSensor.m */; settings = {ASSET_TAGS = (); }; };
+		D05870621BB31BE000065EEE /* TISensorTagManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870501BB31BE000065EEE /* TISensorTagManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05870631BB31BE000065EEE /* TISensorTagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D05870511BB31BE000065EEE /* TISensorTagManager.m */; settings = {ASSET_TAGS = (); }; };
+		D05870641BB31BE000065EEE /* TISensorTagSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870521BB31BE000065EEE /* TISensorTagSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05870651BB31BE000065EEE /* TISensorTagSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D05870531BB31BE000065EEE /* TISensorTagSensor.m */; settings = {ASSET_TAGS = (); }; };
+		D05870661BB31BE000065EEE /* TISensorTagThermometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870541BB31BE000065EEE /* TISensorTagThermometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05870671BB31BE000065EEE /* TISensorTagThermometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D05870551BB31BE000065EEE /* TISensorTagThermometerSensor.m */; settings = {ASSET_TAGS = (); }; };
+		D058706A1BB31E0400065EEE /* TISensorTagDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870691BB31E0400065EEE /* TISensorTagDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D05870361BB31A8700065EEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D05870211BB31A8700065EEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05870291BB31A8700065EEE;
+			remoteInfo = TISensorTagDevice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D058702A1BB31A8700065EEE /* TISensorTagDevice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TISensorTagDevice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D058702F1BB31A8700065EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05870341BB31A8700065EEE /* TISensorTagDeviceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TISensorTagDeviceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05870391BB31A8700065EEE /* TISensorTagDeviceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TISensorTagDeviceTests.m; sourceTree = "<group>"; };
+		D058703B1BB31A8700065EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05870441BB31BDF00065EEE /* TISensorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTag.h; sourceTree = SOURCE_ROOT; };
+		D05870451BB31BE000065EEE /* TISensorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTag.m; sourceTree = SOURCE_ROOT; };
+		D05870461BB31BE000065EEE /* TISensorTagAccelerometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagAccelerometerSensor.h; sourceTree = SOURCE_ROOT; };
+		D05870471BB31BE000065EEE /* TISensorTagAccelerometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagAccelerometerSensor.m; sourceTree = SOURCE_ROOT; };
+		D05870481BB31BE000065EEE /* TISensorTagBarometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagBarometerSensor.h; sourceTree = SOURCE_ROOT; };
+		D05870491BB31BE000065EEE /* TISensorTagBarometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagBarometerSensor.m; sourceTree = SOURCE_ROOT; };
+		D058704A1BB31BE000065EEE /* TISensorTagButtonSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagButtonSensor.h; sourceTree = SOURCE_ROOT; };
+		D058704B1BB31BE000065EEE /* TISensorTagButtonSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagButtonSensor.m; sourceTree = SOURCE_ROOT; };
+		D058704C1BB31BE000065EEE /* TISensorTagGyroscopeSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagGyroscopeSensor.h; sourceTree = SOURCE_ROOT; };
+		D058704D1BB31BE000065EEE /* TISensorTagGyroscopeSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagGyroscopeSensor.m; sourceTree = SOURCE_ROOT; };
+		D058704E1BB31BE000065EEE /* TISensorTagHygrometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagHygrometerSensor.h; sourceTree = SOURCE_ROOT; };
+		D058704F1BB31BE000065EEE /* TISensorTagHygrometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagHygrometerSensor.m; sourceTree = SOURCE_ROOT; };
+		D05870501BB31BE000065EEE /* TISensorTagManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagManager.h; sourceTree = SOURCE_ROOT; };
+		D05870511BB31BE000065EEE /* TISensorTagManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagManager.m; sourceTree = SOURCE_ROOT; };
+		D05870521BB31BE000065EEE /* TISensorTagSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagSensor.h; sourceTree = SOURCE_ROOT; };
+		D05870531BB31BE000065EEE /* TISensorTagSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagSensor.m; sourceTree = SOURCE_ROOT; };
+		D05870541BB31BE000065EEE /* TISensorTagThermometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagThermometerSensor.h; sourceTree = SOURCE_ROOT; };
+		D05870551BB31BE000065EEE /* TISensorTagThermometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagThermometerSensor.m; sourceTree = SOURCE_ROOT; };
+		D05870691BB31E0400065EEE /* TISensorTagDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagDevice.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D05870261BB31A8700065EEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05870311BB31A8700065EEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05870351BB31A8700065EEE /* TISensorTagDevice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D05870201BB31A8700065EEE = {
+			isa = PBXGroup;
+			children = (
+				D058702C1BB31A8700065EEE /* TISensorTagDevice */,
+				D05870381BB31A8700065EEE /* TISensorTagDeviceTests */,
+				D058702B1BB31A8700065EEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D058702B1BB31A8700065EEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D058702A1BB31A8700065EEE /* TISensorTagDevice.framework */,
+				D05870341BB31A8700065EEE /* TISensorTagDeviceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D058702C1BB31A8700065EEE /* TISensorTagDevice */ = {
+			isa = PBXGroup;
+			children = (
+				D05870691BB31E0400065EEE /* TISensorTagDevice.h */,
+				D05870501BB31BE000065EEE /* TISensorTagManager.h */,
+				D05870511BB31BE000065EEE /* TISensorTagManager.m */,
+				D05870441BB31BDF00065EEE /* TISensorTag.h */,
+				D05870451BB31BE000065EEE /* TISensorTag.m */,
+				D05870461BB31BE000065EEE /* TISensorTagAccelerometerSensor.h */,
+				D05870471BB31BE000065EEE /* TISensorTagAccelerometerSensor.m */,
+				D05870481BB31BE000065EEE /* TISensorTagBarometerSensor.h */,
+				D05870491BB31BE000065EEE /* TISensorTagBarometerSensor.m */,
+				D058704A1BB31BE000065EEE /* TISensorTagButtonSensor.h */,
+				D058704B1BB31BE000065EEE /* TISensorTagButtonSensor.m */,
+				D058704C1BB31BE000065EEE /* TISensorTagGyroscopeSensor.h */,
+				D058704D1BB31BE000065EEE /* TISensorTagGyroscopeSensor.m */,
+				D058704E1BB31BE000065EEE /* TISensorTagHygrometerSensor.h */,
+				D058704F1BB31BE000065EEE /* TISensorTagHygrometerSensor.m */,
+				D05870541BB31BE000065EEE /* TISensorTagThermometerSensor.h */,
+				D05870551BB31BE000065EEE /* TISensorTagThermometerSensor.m */,
+				D05870521BB31BE000065EEE /* TISensorTagSensor.h */,
+				D05870531BB31BE000065EEE /* TISensorTagSensor.m */,
+				D058702F1BB31A8700065EEE /* Info.plist */,
+			);
+			path = TISensorTagDevice;
+			sourceTree = "<group>";
+		};
+		D05870381BB31A8700065EEE /* TISensorTagDeviceTests */ = {
+			isa = PBXGroup;
+			children = (
+				D05870391BB31A8700065EEE /* TISensorTagDeviceTests.m */,
+				D058703B1BB31A8700065EEE /* Info.plist */,
+			);
+			path = TISensorTagDeviceTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D05870271BB31A8700065EEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D058706A1BB31E0400065EEE /* TISensorTagDevice.h in Headers */,
+				D05870621BB31BE000065EEE /* TISensorTagManager.h in Headers */,
+				D05870561BB31BE000065EEE /* TISensorTag.h in Headers */,
+				D05870641BB31BE000065EEE /* TISensorTagSensor.h in Headers */,
+				D05870661BB31BE000065EEE /* TISensorTagThermometerSensor.h in Headers */,
+				D05870601BB31BE000065EEE /* TISensorTagHygrometerSensor.h in Headers */,
+				D058705A1BB31BE000065EEE /* TISensorTagBarometerSensor.h in Headers */,
+				D05870581BB31BE000065EEE /* TISensorTagAccelerometerSensor.h in Headers */,
+				D058705C1BB31BE000065EEE /* TISensorTagButtonSensor.h in Headers */,
+				D058705E1BB31BE000065EEE /* TISensorTagGyroscopeSensor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D05870291BB31A8700065EEE /* TISensorTagDevice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D058703E1BB31A8700065EEE /* Build configuration list for PBXNativeTarget "TISensorTagDevice" */;
+			buildPhases = (
+				D05870251BB31A8700065EEE /* Sources */,
+				D05870261BB31A8700065EEE /* Frameworks */,
+				D05870271BB31A8700065EEE /* Headers */,
+				D05870281BB31A8700065EEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TISensorTagDevice;
+			productName = TISensorTagDevice;
+			productReference = D058702A1BB31A8700065EEE /* TISensorTagDevice.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D05870331BB31A8700065EEE /* TISensorTagDeviceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05870411BB31A8700065EEE /* Build configuration list for PBXNativeTarget "TISensorTagDeviceTests" */;
+			buildPhases = (
+				D05870301BB31A8700065EEE /* Sources */,
+				D05870311BB31A8700065EEE /* Frameworks */,
+				D05870321BB31A8700065EEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D05870371BB31A8700065EEE /* PBXTargetDependency */,
+			);
+			name = TISensorTagDeviceTests;
+			productName = TISensorTagDeviceTests;
+			productReference = D05870341BB31A8700065EEE /* TISensorTagDeviceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D05870211BB31A8700065EEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Peter Merchant";
+				TargetAttributes = {
+					D05870291BB31A8700065EEE = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					D05870331BB31A8700065EEE = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = D05870241BB31A8700065EEE /* Build configuration list for PBXProject "TISensorTagDevice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D05870201BB31A8700065EEE;
+			productRefGroup = D058702B1BB31A8700065EEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D05870291BB31A8700065EEE /* TISensorTagDevice */,
+				D05870331BB31A8700065EEE /* TISensorTagDeviceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D05870281BB31A8700065EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05870321BB31A8700065EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D05870251BB31A8700065EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05870591BB31BE000065EEE /* TISensorTagAccelerometerSensor.m in Sources */,
+				D05870631BB31BE000065EEE /* TISensorTagManager.m in Sources */,
+				D05870671BB31BE000065EEE /* TISensorTagThermometerSensor.m in Sources */,
+				D05870611BB31BE000065EEE /* TISensorTagHygrometerSensor.m in Sources */,
+				D05870651BB31BE000065EEE /* TISensorTagSensor.m in Sources */,
+				D058705D1BB31BE000065EEE /* TISensorTagButtonSensor.m in Sources */,
+				D058705B1BB31BE000065EEE /* TISensorTagBarometerSensor.m in Sources */,
+				D058705F1BB31BE000065EEE /* TISensorTagGyroscopeSensor.m in Sources */,
+				D05870571BB31BE000065EEE /* TISensorTag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05870301BB31A8700065EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D058703A1BB31A8700065EEE /* TISensorTagDeviceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D05870371BB31A8700065EEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05870291BB31A8700065EEE /* TISensorTagDevice */;
+			targetProxy = D05870361BB31A8700065EEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D058703C1BB31A8700065EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D058703D1BB31A8700065EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D058703F1BB31A8700065EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = name.petermerchant.TISensorTagDevice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D05870401BB31A8700065EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = name.petermerchant.TISensorTagDevice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D05870421BB31A8700065EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TISensorTagDeviceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = name.petermerchant.TISensorTagDeviceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D05870431BB31A8700065EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TISensorTagDeviceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = name.petermerchant.TISensorTagDeviceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D05870241BB31A8700065EEE /* Build configuration list for PBXProject "TISensorTagDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D058703C1BB31A8700065EEE /* Debug */,
+				D058703D1BB31A8700065EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D058703E1BB31A8700065EEE /* Build configuration list for PBXNativeTarget "TISensorTagDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D058703F1BB31A8700065EEE /* Debug */,
+				D05870401BB31A8700065EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D05870411BB31A8700065EEE /* Build configuration list for PBXNativeTarget "TISensorTagDeviceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05870421BB31A8700065EEE /* Debug */,
+				D05870431BB31A8700065EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D05870211BB31A8700065EEE /* Project object */;
+}
