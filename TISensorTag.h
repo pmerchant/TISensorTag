@@ -26,7 +26,8 @@
 {
 @protected
 	CBPeripheral*		device;
-
+	NSError*			deviceError;
+	
 	TISensorTagAccelerometerSensor*	accelerometer;
 	TISensorTagGyroscopeSensor*		gyroscope;
 	TISensorTagBarometerSensor*		barometer;
@@ -39,8 +40,13 @@
  @property device
  @description CBPeripheral representing the device.
 */
-@property (readonly)			CBPeripheral*		device;
+@property (readonly, strong)			CBPeripheral*		device;
 
+/*!
+ @property deviceError
+ @description An NSError with the last error that the device had.  This is best accessed through KVO.
+ */
+@property (readonly, strong)			NSError*	deviceError;
 /*!
  @property accelerometerActive
  @description Boolean value for whether the accelerometer is active. Assigning a value to this will turn the accelerometer on or off (YES or NO, respectively).

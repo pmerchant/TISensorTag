@@ -222,6 +222,13 @@
 	else
 		NSLog(@"Discovered characteristics for unknown service: %@", service);
 	
+	if (error)
+	{
+		[self willChangeValueForKey: @"deviceError"];
+		deviceError = error;
+		[self didChangeValueForKey: @"deviceError"];
+	}
+	
 	if (foundSensor)
 	{
 		for (eachCharacteristic in service.characteristics)
@@ -231,6 +238,13 @@
 
 - (void) peripheral: (CBPeripheral*) peripheral didUpdateValueForCharacteristic: (CBCharacteristic*) characteristic error: (NSError*) error
 {
+	if (error)
+	{
+		[self willChangeValueForKey: @"deviceError"];
+		deviceError = error;
+		[self didChangeValueForKey: @"deviceError"];
+	}
+	
 	[barometer updatedValue: characteristic.value forCharacteristic: characteristic];
 	[hygrometer updatedValue: characteristic.value forCharacteristic: characteristic];
 	[thermometer updatedValue: characteristic.value forCharacteristic: characteristic];
@@ -242,15 +256,21 @@
 - (void) peripheral: (CBPeripheral*) peripheral didWriteValueForCharacteristic: (CBCharacteristic*) characteristic error:(NSError*) error
 {
 	if (error)
-		NSLog(@"Error writing characteristic %@: %@", characteristic.UUID, error);
-	else
-		NSLog(@"Success writing characteristic %@", characteristic.UUID);
+	{
+		[self willChangeValueForKey: @"deviceError"];
+		deviceError = error;
+		[self didChangeValueForKey: @"deviceError"];
+	}
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
 	if (error)
-		NSLog(@"Error updating notification state for characteristic %@: %@", characteristic.UUID, error);
+	{
+		[self willChangeValueForKey: @"deviceError"];
+		deviceError = error;
+		[self didChangeValueForKey: @"deviceError"];
+	}
 }
 
 @end
