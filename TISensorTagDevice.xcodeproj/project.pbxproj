@@ -28,6 +28,8 @@
 		D05870661BB31BE000065EEE /* TISensorTagThermometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870541BB31BE000065EEE /* TISensorTagThermometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D05870671BB31BE000065EEE /* TISensorTagThermometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D05870551BB31BE000065EEE /* TISensorTagThermometerSensor.m */; settings = {ASSET_TAGS = (); }; };
 		D058706A1BB31E0400065EEE /* TISensorTagDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = D05870691BB31E0400065EEE /* TISensorTagDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0F863BD1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F863BB1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.h */; settings = {ASSET_TAGS = (); }; };
+		D0F863BE1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F863BC1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		D05870541BB31BE000065EEE /* TISensorTagThermometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagThermometerSensor.h; sourceTree = SOURCE_ROOT; };
 		D05870551BB31BE000065EEE /* TISensorTagThermometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagThermometerSensor.m; sourceTree = SOURCE_ROOT; };
 		D05870691BB31E0400065EEE /* TISensorTagDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagDevice.h; sourceTree = SOURCE_ROOT; };
+		D0F863BB1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TISensorTagBMP280BarometerSensor.h; sourceTree = SOURCE_ROOT; };
+		D0F863BC1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TISensorTagBMP280BarometerSensor.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				D05870471BB31BE000065EEE /* TISensorTagAccelerometerSensor.m */,
 				D05870481BB31BE000065EEE /* TISensorTagBarometerSensor.h */,
 				D05870491BB31BE000065EEE /* TISensorTagBarometerSensor.m */,
+				D0F863BB1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.h */,
+				D0F863BC1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.m */,
 				D058704A1BB31BE000065EEE /* TISensorTagButtonSensor.h */,
 				D058704B1BB31BE000065EEE /* TISensorTagButtonSensor.m */,
 				D058704C1BB31BE000065EEE /* TISensorTagGyroscopeSensor.h */,
@@ -148,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D058706A1BB31E0400065EEE /* TISensorTagDevice.h in Headers */,
+				D0F863BD1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.h in Headers */,
 				D05870621BB31BE000065EEE /* TISensorTagManager.h in Headers */,
 				D05870561BB31BE000065EEE /* TISensorTag.h in Headers */,
 				D05870641BB31BE000065EEE /* TISensorTagSensor.h in Headers */,
@@ -262,6 +269,7 @@
 				D05870611BB31BE000065EEE /* TISensorTagHygrometerSensor.m in Sources */,
 				D05870651BB31BE000065EEE /* TISensorTagSensor.m in Sources */,
 				D058705D1BB31BE000065EEE /* TISensorTagButtonSensor.m in Sources */,
+				D0F863BE1C38ADC9007F6FF9 /* TISensorTagBMP280BarometerSensor.m in Sources */,
 				D058705B1BB31BE000065EEE /* TISensorTagBarometerSensor.m in Sources */,
 				D058705F1BB31BE000065EEE /* TISensorTagGyroscopeSensor.m in Sources */,
 				D05870571BB31BE000065EEE /* TISensorTag.m in Sources */,
