@@ -8,6 +8,8 @@
 
 #import "TISensorTag.h"
 
+#import "TISensorTagBMP280BarometerSensor.h"
+
 @implementation TISensorTag
 
 @synthesize device;
@@ -17,6 +19,7 @@
 @synthesize thermometer;
 @synthesize gyroscope;
 @synthesize buttons;
+@synthesize deviceError;
 
 - (id) initWithPeripheral: (CBPeripheral*) theDevice
 {
@@ -176,7 +179,10 @@
 		else if ([eachService.UUID isEqual: [TISensorTagBarometerSensor serviceUUID]] && barometer == NULL)
 		{
 			[self willChangeValueForKey: @"barometer"];
-			barometer = [[TISensorTagBarometerSensor alloc] initWithService: eachService forDevice: device];
+			if ([self.name isEqualToString: @"TI BLE Sensor Tag"])
+				barometer = [[TISensorTagBarometerSensor alloc] initWithService: eachService forDevice: device];
+			else if ([self.name isEqualToString: @"SensorTag 2.0"])
+				barometer = [[TISensorTagBMP280BarometerSensor alloc] initWithService: eachService forDevice: device];
 			[self didChangeValueForKey: @"barometer"];
 		}
 		else if ([eachService.UUID isEqual: [TISensorTagHygrometerSensor serviceUUID]] &&
