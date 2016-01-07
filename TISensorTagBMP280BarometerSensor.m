@@ -19,7 +19,7 @@
 {
 	NSDictionary*	characteristics = @{ kDataUUIDStringKey : @"F000AA41-0451-4000-B000-000000000000",
 										 kConfigurationUUIDStringKey : @"F000AA42-0451-4000-B000-000000000000",
-										 kPeriodUUIDStringKey : @"F000AA43-0451-4000-B000-000000000000" };
+										 kPeriodUUIDStringKey : @"F000AA44-0451-4000-B000-000000000000" };
 	
 	if ((self = [self initWithService: service forDevice: device characteristics: characteristics]))
 	{
@@ -45,8 +45,8 @@
 {
 	NSAssert((data.length >= 6), @"Did not receive enough data from device: %lu", (unsigned long)data.length);
 
-	int32_t		tempBytes;
-	int32_t		pressBytes;
+	int32_t		tempBytes = 0;
+	int32_t		pressBytes = 0;
 	
 	// The data is three bytes of temperature in celsius followed by three bytes of pressure in hPa.
 	
