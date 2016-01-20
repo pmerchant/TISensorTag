@@ -51,7 +51,7 @@
 	tempData++;	// go to the next 16 bits
 	
 	double_t	newAmbient = (*tempData) / 128.0;
-	NSLog(@"ambient Temp = %.2f", newAmbient);
+
 	if (newAmbient != _temperature)
 	{
 		[self willChangeValueForKey: @"temperature"];

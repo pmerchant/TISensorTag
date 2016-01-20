@@ -87,13 +87,13 @@
 
 - (void) centralManager: (CBCentralManager*) central didDiscoverPeripheral: (CBPeripheral*) peripheral advertisementData: (NSDictionary*) advertisementData RSSI: (NSNumber*) RSSI
 {
-	peripheral.delegate = self;
-	[central connectPeripheral: peripheral options: NULL];
-
 	if (foundPeripherals)
 		[foundPeripherals addObject: peripheral];
 	else
 		foundPeripherals = [NSMutableArray arrayWithObject: peripheral];
+
+	peripheral.delegate = self;
+	[central connectPeripheral: peripheral options: NULL];
 }
 
 - (void) centralManager: (CBCentralManager*) central didConnectPeripheral: (CBPeripheral*) peripheral

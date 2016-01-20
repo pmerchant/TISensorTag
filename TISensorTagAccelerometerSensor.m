@@ -54,11 +54,11 @@
 	AccelerationData	newAccel;
 	int8_t*				eachElement = (int8_t*) [data bytes];
 	
-	newAccel.x = (*eachElement) / 64.0;
+	newAccel.x = ((*eachElement) / 64.0) * 4;
 	eachElement++;
-	newAccel.y = (*eachElement) / 64.0;
+	newAccel.y = ((*eachElement) / 64.0) * 4;
 	eachElement++;
-	newAccel.z = (*eachElement * -1) / 64.0;	// Adjust for the same direction as the other two
+	newAccel.z = ((*eachElement) / 64.0) * 4;
 	
 	if (newAccel.x != acceleration.x || newAccel.y != acceleration.y || newAccel.z != acceleration.z)
 	{

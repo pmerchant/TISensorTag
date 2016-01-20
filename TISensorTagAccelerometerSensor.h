@@ -23,7 +23,6 @@ struct AccelerationDataStruct
 
 typedef struct AccelerationDataStruct AccelerationData;
 
-
 /// @description TISensorTagAccelerometerSensor contains acceleration data from the sensor.
 @interface TISensorTagAccelerometerSensor : TISensorTagSensor
 {
@@ -32,6 +31,7 @@ typedef struct AccelerationDataStruct AccelerationData;
 
 /// @description Acceleration information along X, Y, and Z axes.
 @property (readonly, assign) AccelerationData acceleration;
+@property (readwrite, assign) uint8_t accuracy;
 
 /// @returns Returns the TISensorTag Acceleration Service UUID, which is F000AA10-0451-4000-B000-000000000000
 + (CBUUID*)	serviceUUID;
